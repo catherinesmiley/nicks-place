@@ -1,4 +1,4 @@
-export const rootReducer = (state = { categories: [], loading: false }, action) => {
+export const menuReducer = (state = { categories: [], loading: false }, action) => {
     switch (action.type) {
         case 'LOADING_CATEGORIES': 
         console.log("state in loading categories", state)
