@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import Meals from './Meals'
-
-class Menus extends Component {
-    render() {
-        return (
-            <div>
-                <Meals />
-            </div>
-        );
-    }
-}
+const Menus = () => {
+    return (
+        <div>
+            Menus
+        </div>
+    );
+};
 
 export default Menus;

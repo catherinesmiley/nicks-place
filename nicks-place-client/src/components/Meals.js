@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { fetchMeals } from '../actions/meals'
-import { Switch, Route } from 'react-router-dom'
-
-import Menus from './Menus'
 
 class Meals extends Component {
 
@@ -14,16 +9,10 @@ class Meals extends Component {
     render() {
         return (
             <div>
-                <Switch>
-                    <Route exact path="/menus" component={Menus} />
-                    <Route exact path="/meals" component={Meals} />
-                    Meals
-                </Switch>
+                Meals
             </div>
         );
     }
 }
 
-const mapStateToProps = ({ meals }) => ({ meals })
-
-export default connect(mapStateToProps, { fetchMeals })(Meals);
+export default Meals;
