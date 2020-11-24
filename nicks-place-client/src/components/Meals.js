@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 
 class Meals extends Component {
-
-    componentDidMount() {
-        this.props.fetchMeals()
-    }
-
     render() {
+        console.log("props in Meals", this.props)
         return (
             <div>
                 Meals
