@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 
-import Menu from './components/Menu'
-
-class App extends Component {
+class MenuItems extends Component {
     render() {
         return (
             <div>
-                <Menu />
+                Menu items!
             </div>
         );
     }
 }
 
-export default App;
+export default MenuItems;
