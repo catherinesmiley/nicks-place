@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import MenuItems from './MenuItems'
+import Meals from './Meals'
 
 class Menu extends Component {
     render() {
         return (
             <div>
-                <MenuItems />
+                <Meals />
             </div>
         );
     }

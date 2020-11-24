@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import { menuItemsReducer } from './menuItemsReducer'
+import { mealsReducer } from './mealsReducer'
 
 export const rootReducer = combineReducers({
-    menuItems: menuItemsReducer
+    meals: mealsReducer
 })
