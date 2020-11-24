@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Meals extends Component {
-    render() {
-        console.log("props in Meals", this.props)
-        return (
-            <div>
-                Meals
-            </div>
-        );
-    }
-}
+const Meals = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+};
 
 export default Meals;
