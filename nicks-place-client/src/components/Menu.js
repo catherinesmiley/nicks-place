@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom'
 
+import MealsContainer from './MealsContainer'
+
 const Menu = ({ menus }) => {
     const { id } = useParams()
     const menu = menus.find(m => m.id === parseInt(id))
@@ -8,9 +10,10 @@ const Menu = ({ menus }) => {
     if (menus.length === 0) return null 
 
     return (
-        <div>
+        <>
             <h2>{menu.name}</h2>
-        </div>
+            <MealsContainer menu={menu} />
+        </>
     );
 };
 
