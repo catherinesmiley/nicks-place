@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Home from './components/Home'
 import Navbar from './components/Navbar'
-import Menu from './components/Menu'
+import Menus from './components/Menus'
 
 class App extends Component {
     render() {
@@ -14,7 +14,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={Home} />
                     </Switch>
-                    <Menu />
+                    <Menus />
                 </div>
             </Router>
 
