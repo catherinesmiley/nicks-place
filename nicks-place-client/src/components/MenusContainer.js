@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom'
 import Meals from './Meals'
 import Menus from './Menus'
 import Menu from './Menu'
+import HoursAndLocation from './HoursAndLocation'
 
 class MenusContainer extends Component {
 
@@ -20,6 +21,7 @@ class MenusContainer extends Component {
                     <Route exact path="/menus" render={() => <Menus menus={this.props.menus} />} />
                     <Route path="/menus/:id" render={() => <Menu menus={this.props.menus} />} />
                     <Route exact path="/meals" component={Meals} />
+                    <Route exact path="/hoursandlocation" component={HoursAndLocation} />
                     {/* hours and location
                     about
                     specials */}

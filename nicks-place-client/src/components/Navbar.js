@@ -14,6 +14,11 @@ const Navbar = () => {
                 exact
             >Menus</NavLink>
             <br />
+            <NavLink
+                to="/hoursandlocation"
+                exact
+            >Hours & Location</NavLink>
+            <br />
             <br />
         </div>
     );
