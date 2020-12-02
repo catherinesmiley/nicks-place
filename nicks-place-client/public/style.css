@@ -4,3 +4,7 @@ body {
     margin-left: 150px;
     margin-right: 150px;
 }
+
+.logo {
+    background-image: url(./nicksplacelogo.jpg);
+}
