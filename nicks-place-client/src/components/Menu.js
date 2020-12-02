@@ -11,7 +11,7 @@ const Menu = ({ menus }) => {
 
     return (
         <>
-            <h2>{menu.name}</h2>
+            <h1>{menu.name}</h1>
             <MealsContainer menu={menu} />
         </>
     );

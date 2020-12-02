@@ -5,6 +5,18 @@ body {
     margin-right: 150px;
 }
 
-.logo {
-    background-image: url(./nicksplacelogo.jpg);
+a:link {
+    color: #181c16
+}
+
+a:visited {
+    color: #181c16
+}
+
+a:hover {
+    color: #cf0015
+}
+
+h1 {
+    color: #cf0015
 }
