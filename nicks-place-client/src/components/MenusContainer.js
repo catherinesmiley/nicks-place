@@ -8,6 +8,7 @@ import Menus from './Menus'
 import Menu from './Menu'
 import HoursAndLocation from './HoursAndLocation'
 import Specials from './Specials'
+import About from './About'
 
 class MenusContainer extends Component {
 
@@ -24,7 +25,7 @@ class MenusContainer extends Component {
                     <Route exact path="/meals" component={Meals} />
                     <Route exact path="/hoursandlocation" component={HoursAndLocation} />
                     <Route exact path="/specials" component={Specials} />
-                    {/* about */}
+                    <Route exact path="/about" component={About} />
                 </Switch>
             </div>
         );

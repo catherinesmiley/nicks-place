@@ -15,14 +15,19 @@ const Navbar = () => {
             >Menus</NavLink>
             <br />
             <NavLink
+                to="/specials"
+                exact
+            >Weekly Specials</NavLink>
+            <br />
+            <NavLink
                 to="/hoursandlocation"
                 exact
             >Hours & Location</NavLink>
             <br />
             <NavLink
-                to="/specials"
+                to="/about"
                 exact
-            >Weekly Specials</NavLink>
+            >About</NavLink>
             <br />
             <br />
         </div>
