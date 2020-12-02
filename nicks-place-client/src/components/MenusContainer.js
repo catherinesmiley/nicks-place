@@ -7,6 +7,7 @@ import Meals from './Meals'
 import Menus from './Menus'
 import Menu from './Menu'
 import HoursAndLocation from './HoursAndLocation'
+import Specials from './Specials'
 
 class MenusContainer extends Component {
 
@@ -22,9 +23,8 @@ class MenusContainer extends Component {
                     <Route path="/menus/:id" render={() => <Menu menus={this.props.menus} />} />
                     <Route exact path="/meals" component={Meals} />
                     <Route exact path="/hoursandlocation" component={HoursAndLocation} />
-                    {/* hours and location
-                    about
-                    specials */}
+                    <Route exact path="/specials" component={Specials} />
+                    {/* about */}
                 </Switch>
             </div>
         );
