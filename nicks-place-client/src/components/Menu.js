@@ -9,7 +9,6 @@ const Menu = ({ menus, menutypes }) => {
     const menu = menus.find(m => m.id === parseInt(id))
 
     const menutypesList = menutypes.filter(m => m.menu_id === menu.id)
-    console.log("menutypesList", menutypesList)
 
     if (menus.length === 0) return null 
 

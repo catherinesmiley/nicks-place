@@ -1,13 +1,16 @@
 import React from 'react';
+import Menutype from './Menutype'
 
-const Menutypes = ({ menutypes }) => {
-    const menutypesList = menutypes.map((menutype, index) => {
-        return <div key={menutype.id}>
-            <h2>{menutype.title}</h2>
-        </div>
+const Menutypes = ({ menutypes, menu }) => {
+    
+    const mealsList = menu.meals.map((meal, index) => {
+        return meal
     })
+
     return (
-        <div>{menutypesList}</div>
+        <div>
+            <Menutype meals={mealsList} menutypes={menutypes} />
+        </div>
     );
 };
 
