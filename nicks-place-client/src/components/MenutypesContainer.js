@@ -11,10 +11,10 @@ class MenutypesContainer extends Component {
     }
 
     render() {
+        console.log("menu id", this.props.menu.id)
         return (
             <div>
-                <Menutypes menutypes={this.props.menutypes} />
-                {/* menutypeID={this.props.menutype.id} */}
+                hi
             </div>
         );
     }
