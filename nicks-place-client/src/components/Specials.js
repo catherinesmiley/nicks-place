@@ -4,16 +4,15 @@ const Specials = () => {
     return (
         <>
             <h1>Weekly Specials</h1>
-            <h3>Sunday</h3>
-            <h3>Tuesday</h3>
+            <h4>$8.50 with choice of 2 sides</h4>
+            <h2>Tuesday</h2>
             <p>Pork Chop - fried or grilled</p>
-            <h3>Wednesday</h3>
+            <h2>Wednesday</h2>
+            <p>Pork Ribs</p>
+            <h2>Thursday</h2>
             <p>Meatloaf</p>
-            <h3>Thursday</h3>
+            <h2>Friday</h2>
             <p>Hamburger Steak</p>
-            <h3>Friday</h3>
-            <p>Ribs</p>
-            <h3>Saturday</h3>
         </>
     );
 };
