@@ -22,8 +22,7 @@ class MenusContainer extends Component {
         return (
             <div>
                 <Switch>
-                    <Route exact path="/menus" render={() => <Menus menus={this.props.menus} menutypes={this.props.menutypes} />} />
-                    {/* need to pass down menutypes to menus? */}
+                    <Route exact path="/menus" render={() => <Menus menus={this.props.menus} />} />
                     <Route path="/menus/:id" render={() => <Menu menus={this.props.menus} menutypes={this.props.menutypes} />} />
                     <Route exact path="/meals" component={Meals} />
                     <Route exact path="/hoursandlocation" component={HoursAndLocation} />

@@ -17,8 +17,11 @@ breakfast_menu.meals.create([{ name: 'Biscuits & Gravy', description: 'Served wi
 
 lunch_menu = Menu.create(name: 'Lunch Menu')
 lunch_menu.menutypes.create([{ title: 'Salads' }, { title: 'Baskets & Plates' }, { title: 'Sandwiches & Burgers' }])
-lunch_menu.meals.create([{ name: 'Quesadilla or Texas Burrito', description: 'Chicken or Ground Beef in a Flour Tortilla with Cheese, Lettuce, Pico de Gallo & Sour Cream. Served with Rice and Black Beans', price: '$8.00' },
-{ name: 'Grilled 8oz. Hamburger', description: 'Topped with Onion, Lettuce, Tomato, Pickle, Mayo & Mustard', price: '$8.50' }])
+lunch_menu.meals.create([{ name: 'Quesadilla or Texas Burrito', description: 'Chicken or Ground Beef in a Flour Tortilla with Cheese, Lettuce, Pico de Gallo & Sour Cream. Served with Rice and Black Beans', price: '$8.00', menutype_id: 3 },
+{ name: 'Grilled 8oz. Hamburger', description: 'Topped with Onion, Lettuce, Tomato, Pickle, Mayo & Mustard', price: '$8.50', menutype_id: 3 }, { name: 'Chef Salad', description: 'Mixed Greens, Ham, Tomato, Hardboiled Egg, Cucumber & Cheese', 
+price: '$8.50', menutype_id: 1 }, { name: 'Taco Salad', description: "Chicken or Ground Beef in a Crispy Flour Tortilla Basket with Lettuce, Tomato, Black Olives & Sour Cream. Served with Chef Nick's Hot Sauce",
+price: '$8.00', menutype_id: 1 }, { name: 'Fried Chicken Finger Basket', description: 'Served with Mac & Cheese, Green Beans or Fries', price: '$7.00', menutype_id: 2 },
+{ name: '8-Piece Chicken Wing Basket', description: 'Spicy, Hot, Mild or Honey BBQ. Served with Fries', price: '$8.50', menutype_id: 2 }])
 
 dinner_menu = Menu.create(name: 'Dinner Menu')
 dinner_menu.meals.create([{ name: 'Steak Salad', description: '8 oz. NY Strip Steak sliced on a bed of Mixed Greens with tomato, onion, cucumber and green pepper. Garnished with Crispy Fried Onions. Choice of Dressing', price: '$16' }, 
