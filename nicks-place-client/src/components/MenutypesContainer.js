@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 import { fetchMenutypes } from '../actions/menutypes'
+import Menutypes from './Menutypes'
 
 class MenutypesContainer extends Component {
 
@@ -12,7 +13,8 @@ class MenutypesContainer extends Component {
     render() {
         return (
             <div>
-                Menu Types
+                <Menutypes menutypes={this.props.menutypes} />
+                {/* menutypeID={this.props.menutype.id} */}
             </div>
         );
     }
