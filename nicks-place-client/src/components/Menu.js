@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom'
 
 import MealsContainer from './MealsContainer'
-import MenutypesContainer from './MenutypesContainer'
+import Menutypes from './Menutypes'
 
 const Menu = ({ menus, menutypes }) => {
     const { id } = useParams()
@@ -18,7 +18,7 @@ const Menu = ({ menus, menutypes }) => {
         <>
             <h1>{menu.name}</h1>
             <MealsContainer menu={menu} />
-            <MenutypesContainer menutypes={menutypesList} menu={menu} />
+            <Menutypes menutypes={menutypesList} menu={menu} />
         </>
     );
 };
