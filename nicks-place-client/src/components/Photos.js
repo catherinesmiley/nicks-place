@@ -9,11 +9,36 @@ import phillycheesesteak from '../images/phillycheesesteak.jpg'
 const Photos = () => {
     return (
         <div>
-            <img src={breakfastquesadilla} height="250" width="250" alt="breakfast quesadilla" />
-            <img src={chickensalad} height="250" width="250" alt="chicken salad" />
-            <img src={grilledchickenplate} height="250" width="250" alt="grilled chicken plate" />
-            <img src={chickenwrap} height="250" width="250" alt="chicken wrap" />
-            <img src={phillycheesesteak} height="250" width="250" alt="philly cheesesteak" />
+            <img 
+                src={breakfastquesadilla} 
+                height="250" 
+                width="250" 
+                alt="breakfast quesadilla" 
+            />
+            <img 
+                src={chickensalad} 
+                height="250" 
+                width="250" 
+                alt="chicken salad" 
+            />
+            <img 
+                src={grilledchickenplate} 
+                height="250" 
+                width="250" 
+                alt="grilled chicken plate" 
+            />
+            <img 
+                src={chickenwrap} 
+                height="250" 
+                width="250" 
+                alt="chicken wrap" 
+            />
+            <img 
+                src={phillycheesesteak} 
+                height="250" 
+                width="250" 
+                alt="philly cheesesteak" 
+            />
         </div>
     );
 };
