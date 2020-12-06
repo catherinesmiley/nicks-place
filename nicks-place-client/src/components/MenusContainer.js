@@ -8,6 +8,7 @@ import Menu from './Menu'
 import HoursAndLocation from './HoursAndLocation'
 import Specials from './Specials'
 import About from './About'
+import Photos from './Photos'
 import { fetchMenus } from '../actions/menus'
 import { fetchMenutypes } from '../actions/menutypes'
 
@@ -28,6 +29,7 @@ class MenusContainer extends Component {
                     <Route exact path="/hoursandlocation" component={HoursAndLocation} />
                     <Route exact path="/specials" component={Specials} />
                     <Route exact path="/about" component={About} />
+                    <Route exact path="/photos" component={Photos} />
                 </Switch>
             </div>
         );

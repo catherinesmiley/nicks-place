@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
+const NavBar = () => {
     return (
-        <div>
+        <div id="navbar">
             <NavLink 
                 to="/"
                 exact
@@ -29,9 +29,14 @@ const Navbar = () => {
                 exact
             >About</NavLink>
             <br />
+            <NavLink
+                to="/photos"
+                exact
+            >Photos</NavLink>
+            <br />
             <br />
         </div>
     );
 };
 
-export default Navbar;
+export default NavBar;

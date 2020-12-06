@@ -6,21 +6,37 @@ body {
 }
 
 a:link {
-    color: #181c16
+    color: #181c16;
+    text-decoration: none
 }
 
 a:visited {
-    color: #181c16
+    color: #181c16;
+    text-decoration: none
 }
 
 a:hover {
-    color: #cf0015
+    color: #cf0015;
+    text-decoration: none;
 }
+
+#navbar a {
+    width: 100%;
+    float: left;
+    /* margin: 0 0 3em 0; */
+    padding: 0;
+    /* list-style: none; */
+    display: inline;
+}
+
+/* #navbar a {
+    float: left;
+} */
 
 h1 {
     color: #cf0015
 }
 
 .meals {
-    column-count: 3
+    column-count: 2
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import map from '../images/map.jpg'
 
 const HoursAndLocation = () => {
