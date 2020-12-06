@@ -46,6 +46,11 @@ h1 {
     margin-right: 175px
 }
 
+.about {
+    margin-left: 160px;
+    margin-right: 160px
+}
+
 hr {
     border: 1px solid #c5a173;
     width: 60%
