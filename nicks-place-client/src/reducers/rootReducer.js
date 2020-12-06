@@ -6,5 +6,6 @@ import { menutypesReducer } from './menutypesReducer'
 export const rootReducer = combineReducers({
     meals: mealsReducer,
     menus: menusReducer,
-    menutypes: menutypesReducer
+    menutypes: menutypesReducer,
+    sides: sidesReducer
 })
