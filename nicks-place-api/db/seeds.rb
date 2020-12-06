@@ -30,3 +30,15 @@ dinner_menu.meals.create([{ name: 'Steak Salad', description: '8 oz. NY Strip St
 { name: 'Pan Seared Salmon', description: '8 oz. Fillet Seared with Garlic, Shallots, Summer Squash, Tomato, Capers, Onion & Cilantro, Garnished with a Citrus Cream Sauce', price: '$16' },
 { name: 'Pan Seared Pork Tenderloin', description: '7 oz. Tenderloin with a Brandy Cream Sauce', price: '$15' },
 { name: 'Four-Cheese Ravioli with Shrimp or Chicken', description: 'Tossed with garlic, fresh herbs, zucchini & yellow squash, Served with your choice of Sauce; Basil Plum Tomato Sauce or Parmesan Garlic Cream Sauce, Garlic Toast', price: '$16' }])
+
+bev_menu = Menu.create(name: 'Beverages')
+bev_menu.meals.create([{ name: 'Freshly Brewed Coffee', price: '$1.35' }, { name: 'Juices', 
+description: 'Apple or Orange', price: '$1.30' }, { name: 'Coca-Cola Soft Drinks', description: '1 refill included. If more refills needed $2.00', 
+price: '$1.45' }, { name: 'Sweet or Unsweet Tea', price: '$1.45' }])
+
+Side.create(name: 'Green Beans')
+Side.create(name: 'Mac & Cheese')
+Side.create(name: 'Mashed Potatoes')
+Side.create(name: 'Sliced Tomatoes')
+Side.create(name: 'Collard Greens')
+Side.create(name: 'Potato Salad')

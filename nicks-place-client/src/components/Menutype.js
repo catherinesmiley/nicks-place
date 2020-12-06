@@ -8,9 +8,9 @@ const Menutype = ({ meals, menutypes }) => {
     })
 
     return (
-        <div>
+        <>
             {menutypeTitles}
-        </div>
+        </>
     );
 };
 
