@@ -19,7 +19,7 @@ const Menu = ({ menus, menutypes }) => {
             <h1>{menu.name}</h1>
             <h3>{menu.description}</h3>
             <MealsContainer menu={menu} />
-            <Menutypes menutypes={menutypesList} menu={menu} />
+            {/* <Menutypes menutypes={menutypesList} menu={menu} /> */}
         </>
     );
 };

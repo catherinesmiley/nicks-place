@@ -20,3 +20,7 @@ a:hover {
 h1 {
     color: #cf0015
 }
+
+.meals {
+    column-count: 3
+}

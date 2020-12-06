@@ -7,6 +7,8 @@ const Menutypes = ({ menutypes, menu }) => {
         return meal
     })
 
+    console.log("menutypes prop in menutypes", menutypes)
+
     return (
         <div>
             <Menutype meals={mealsList} menutypes={menutypes} />
