@@ -18,13 +18,26 @@ breakfast_menu.meals.create([{ name: 'Biscuits & Gravy', description: 'Served wi
 { name: 'Sides', description: 'Country Potatoes sauteed with Onion & Peppers • Grits topped with Butter • Biscuit • Toast', price: '$0.50 each' }])
 
 lunch_menu = Menu.create(name: 'Lunch Menu',
-description: 'Tues. - Sat. starting at 10:30 AM')
+description: 'Tues. - Sat. starting at 10:30 AM • Salad Dressings: Peach Vinaigrette, Raspberry Vinaigrette, Ranch, Blue Cheese, French, 1000 Island, Caesar, and Olive Oil & Vinegar')
 lunch_menu.menutypes.create([{ title: 'Salads' }, { title: 'Baskets & Plates' }, { title: 'Sandwiches & Burgers' }])
-lunch_menu.meals.create([{ name: 'Quesadilla or Texas Burrito', description: 'Chicken or Ground Beef in a Flour Tortilla with Cheese, Lettuce, Pico de Gallo & Sour Cream. Served with Rice and Black Beans', price: '$8.00', menutype_id: 3 },
-{ name: 'Grilled 8oz. Hamburger', description: 'Topped with Onion, Lettuce, Tomato, Pickle, Mayo & Mustard', price: '$8.50', menutype_id: 3 }, { name: 'Chef Salad', description: 'Mixed Greens, Ham, Tomato, Hardboiled Egg, Cucumber & Cheese', 
-price: '$8.50', menutype_id: 1 }, { name: 'Taco Salad', description: "Chicken or Ground Beef in a Crispy Flour Tortilla Basket with Lettuce, Tomato, Black Olives & Sour Cream. Served with Chef Nick's Hot Sauce",
-price: '$8.00', menutype_id: 1 }, { name: 'Fried Chicken Finger Basket', description: 'Served with Mac & Cheese, Green Beans or Fries', price: '$7.00', menutype_id: 2 },
-{ name: '8-Piece Chicken Wing Basket', description: 'Spicy, Hot, Mild or Honey BBQ. Served with Fries', price: '$8.50', menutype_id: 2 }])
+lunch_menu.meals.create([{ name: 'Chef Salad', description: 'Mixed Greens, Ham, Tomato, Hardboiled Egg, Cucumber & Cheese', price: '$8.50', menutype_id: 1 }, 
+{ name: 'Taco Salad', description: "Chicken or Ground Beef in a Crispy Flour Tortilla Basket with Lettuce, Tomato, Black Olives & Sour Cream. Served with Chef Nick's Hot Sauce",
+price: '$8.00', menutype_id: 1 }, 
+{ name: 'Grilled or Fried Chicken Salad', description: 'Served on Romaine Lettuce with Cucumber, Tomato, Parmesan Cheese & Croutons', price: '$8.50', menutype_id: 1 },
+{ name: 'Grilled Salmon Salad', description: 'Served on a bed of Leafy Mixed Greens with Cucumber, Tomato, Diced Apples, Dried Cranberries & Croutons', price: '$9.50', menutype_id: 1 },
+{ name: 'Fried Chicken Finger Basket', description: 'Served with Mac & Cheese, Green Beans or Fries', price: '$7.00', menutype_id: 2 },
+{ name: '8-Piece Chicken Wing Basket', description: 'Spicy, Hot, Mild or Honey BBQ. Served with Fries', price: '$8.50', menutype_id: 2 }, 
+{ name: 'Fried Fish Plate', description: '7 oz. Fried Fish Fillet served with Mashed Potatoes, Coleslaw or Fries', price: '$7.50', menutype_id: 2 },
+{ name: 'Country Fried Steak Plate', description: 'Served with Green Beans & Mashed Potatoes', price: '$8.50', menutype_id: 2 },
+{ name: 'Spaghetti Plate', description: 'Spaghetti sauteed with Garlic & Oregano, topped with Bolognese Sauce & Parmesan Cheese. Served with Garlic Toast', price: '$8.50', menutype_id: 2 },
+{ name: 'Orecchietta Pasta', description: 'Orecchietta sauteed with Chicken or Shrimp, Garlic, Mixed Squash & Red Peppers, topped with Parmesan Garlic Cream Sauce. Served w/ Garlic Toast', price: 'Chicken - $8.50 • Shrimp - $9.50', menutype_id: 2 },
+{ name: 'Country Fried Steak Sandwich', description: 'Served with French Fries', price: '$8.00', menutype_id: 3 },
+{ name: 'Philly Cheese Steak Sandwich', description: 'With Grilled Onions, Peppres, Mushrooms & Cheese • Served with French Fries', price: '$8.50', menutype_id: 3 },
+{ name: 'Club Sandwich', description: 'Sliced Ham or Turkey piled between 3 slices of Toast with Bacon, Cheese, Mayonnaise, Tomato & Lettuce • Served with French Fries', price: '$8.00', menutype_id: 3 },
+{ name: 'Grilled Chicken Sandwich', description: 'Served on a Bun with Mayonnaise, Lettuce & Tomato • Served with French Fries', price: '$7.50', menutype_id: 3 },
+{ name: 'Quesadilla or Texas Burrito', description: 'Chicken or Ground Beef in a Flour Tortilla with Cheese, Lettuce, Pico de Gallo & Sour Cream. Served with Rice and Black Beans', price: '$8.00 • Sliced Steak - $9.00', menutype_id: 3 },
+{ name: 'Grilled 8oz. Hamburger', description: 'Topped with Onion, Lettuce, Tomato, Pickle, Mayo & Mustard • Served with French Fries', price: '$8.50', menutype_id: 3 },
+{ name: 'Grilled Hot Dog', description: 'Served with Mac & Cheese or Fries', price: '$4.50', menutype_id: 3 }])
 
 dinner_menu = Menu.create(name: 'Dinner Menu',
 description: 'House Salad included with all Dinners except the Steak Salad •

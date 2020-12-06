@@ -15,7 +15,7 @@ class Specials extends Component {
         return (
             <>
                 <h1>Weekly Specials</h1>
-                <h4>$8.50 • Served with cornbread or toast and choice of 2 sides</h4>
+                <h4>$8.50 • Served with cornbread or toast, a drink, and choice of 2 sides</h4>
                 <h2>Tuesday</h2>
                 <p>Pork Chop - fried or grilled</p>
                 <h2>Wednesday</h2>
@@ -24,7 +24,7 @@ class Specials extends Component {
                 <p>Meatloaf</p>
                 <h2>Friday</h2>
                 <p>Hamburger Steak</p>
-                <h2>Sides:</h2>
+                <h2>Sides</h2>
                 <Sides sides={this.props.sides} />
             </>
         );
