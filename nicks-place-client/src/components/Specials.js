@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+
+import { fetchSides } from '../actions/sides'
+import Sides from './Sides'
 
 class Specials extends Component {
+
+    componentDidMount() {
+        this.props.fetchSides()
+    }
+
     render() {
+        console.log("props in specials", this.props)
         return (
             <>
                 <h1>Weekly Specials</h1>
                 <h4>$8.50 with choice of 2 sides</h4>
-                <h4>Sides:</h4>
                 <h2>Tuesday</h2>
                 <p>Pork Chop - fried or grilled</p>
                 <h2>Wednesday</h2>
@@ -15,9 +24,13 @@ class Specials extends Component {
                 <p>Meatloaf</p>
                 <h2>Friday</h2>
                 <p>Hamburger Steak</p>
+                <h2>Sides:</h2>
+                <Sides sides={this.props.sides} />
             </>
         );
     };
 }
 
-export default Specials;
+const mapStateToProps = ({ sides }) => ({ sides })
+
+export default connect(mapStateToProps, { fetchSides })(Specials);

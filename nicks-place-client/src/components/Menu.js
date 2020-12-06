@@ -7,6 +7,7 @@ import Menutypes from './Menutypes'
 const Menu = ({ menus, menutypes }) => {
     const { id } = useParams()
     const menu = menus.find(m => m.id === parseInt(id))
+    console.log("menu in menu", menu)
 
     const menutypesList = menutypes.filter(m => m.menu_id === menu.id)
 
