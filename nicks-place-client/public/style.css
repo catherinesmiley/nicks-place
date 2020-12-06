@@ -40,3 +40,13 @@ h1 {
 .meals {
     column-count: 2
 }
+
+.sides {
+    margin-left: 175px;
+    margin-right: 175px
+}
+
+hr {
+    border: 1px solid #c5a173;
+    width: 60%
+}

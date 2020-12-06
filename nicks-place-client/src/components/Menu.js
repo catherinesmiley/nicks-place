@@ -13,11 +13,11 @@ const Menu = ({ menus, menutypes }) => {
 
     if (menus.length === 0) return null 
 
-
     return (
         <>
             <h1>{menu.name}</h1>
             <h3>{menu.description}</h3>
+            <hr />  
             <MealsContainer menu={menu} />
             {/* <Menutypes menutypes={menutypesList} menu={menu} /> */}
         </>

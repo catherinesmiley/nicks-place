@@ -15,6 +15,7 @@ const Menus = ({ menus }) => {
         <>
             <div>{menusList}</div>
             <br />
+            <hr />
             <div>
                 <h4>FOOD ALLERGY NOTICE</h4>
                 <p>PLEASE BE ADVISED THAT FOOD PREPARED HERE MAY CONTAIN THESE INGREDIENTS:

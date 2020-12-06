@@ -12,7 +12,7 @@ const HoursAndLocation = () => {
             <p>10:30 AM-8 PM</p>
             <h3>Friday & Weekends</h3>
             <p>8 AM-8 PM</p>
-
+            <hr />
             <h1>Location</h1>
             <h3>115 Broad St, Crawfordville, GA 30631</h3>
             <img src={map} height="250" width="415" alt="map" />
