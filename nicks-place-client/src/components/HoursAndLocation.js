@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Map from './Map'
+
 import map from '../images/map.jpg'
 
 const HoursAndLocation = () => {
@@ -17,6 +19,7 @@ const HoursAndLocation = () => {
             <h3>115 Broad St, Crawfordville, GA 30631</h3>
             <img src={map} height="250" width="415" alt="map" />
             {/* embed map */}
+            <Map />
 
         </>
     );

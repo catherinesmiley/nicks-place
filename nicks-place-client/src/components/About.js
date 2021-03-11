@@ -1,8 +1,6 @@
 import React from 'react';
 
-// import chefnick from '../images/chefnick.jpg'
 import chefnick2 from '../images/chefnick2.JPG'
-import chefnick3 from '../images/chefnick3.jpg'
 
 const About = () => {
     return (

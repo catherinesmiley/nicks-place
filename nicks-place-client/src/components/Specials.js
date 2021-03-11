@@ -11,7 +11,6 @@ class Specials extends Component {
     }
 
     render() {
-        console.log("props in specials", this.props)
         return (
             <>
                 <h1>Weekly Specials</h1>
