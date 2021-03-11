@@ -11,6 +11,7 @@ const Menus = ({ menus }) => {
                 </Link>
         </div>
     })
+    // console.log(menus)
     return (
         <>
             <div>{menusList}</div>

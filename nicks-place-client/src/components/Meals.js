@@ -3,7 +3,7 @@ import React from 'react';
 const Meals = ({ menuID, meals, menutypes }) => {
     let mealsList = meals.filter(m => m.menu_id === menuID)
 
-    console.log("menutypes in meals", menutypes)
+    // console.log("menutypes in meals", menutypes)
 
     // let menutypesList = menutypes.filter(mt => mt.menu_id === menuID)
 
