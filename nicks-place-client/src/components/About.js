@@ -12,8 +12,6 @@ const About = () => {
             <hr />
             <h1>About Chef Nick</h1>
             <img src={chefnick2} height="300" width="210" alt="chef nick 2" />
-            {/* <img src={chefnick} height="250" width="250" alt="chef nick" /> */}
-            <img src={chefnick3} height="250" width="250" alt="chef nick 3" />
             <p>Chef Nick was born and raised in Mexico City. He served as Head Chef in several hotels in Texas and the Washington DC metro area before opening Mama Chucha's Cafe in 2015.</p>
         </div>
     );
