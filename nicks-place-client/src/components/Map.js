@@ -1,7 +1,12 @@
-import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import React, { useState } from 'react';
+import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
 
 const Map = () => {
+    const [ selected, setSelected ] = useState({});
+
+    const onSelect = item => {
+        setSelected(item);
+    }
   
   const mapStyles = {        
     height: "100vh",
@@ -17,7 +22,8 @@ const Map = () => {
         location: {
             lat: 33.554330310241966, 
             lng: -82.89563459258274
-      }
+      },
+        address: "115 Broad Street, Crawfordville, GA 30631"
     }
 ]
   
@@ -31,9 +37,27 @@ const Map = () => {
         {
             locations.map(item => {
                 return (
-                    <Marker key={item.name} position={item.location}/>
+                    <Marker key={item.name} 
+                        position={item.location}
+                        onClick={() => onSelect(item)}
+                    />
                 )
             })
+        }
+        {
+            selected.location && 
+            (
+                <InfoWindow
+                position={selected.location}
+                clickable={true}
+                onCloseClick={ () => setSelected({})}
+                >
+                    <>
+                    <p>{selected.name}</p>
+                    <p>{selected.address}</p>
+                    </>
+                </InfoWindow>
+            )
         }
         </GoogleMap>
      </LoadScript>
