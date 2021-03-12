@@ -17,7 +17,7 @@ const HoursAndLocation = () => {
             <hr />
             <h1>Location</h1>
             <h3>115 Broad St, Crawfordville, GA 30631</h3>
-            <img src={map} height="250" width="415" alt="map" />
+            {/* <img src={map} height="250" width="415" alt="map" /> */}
             {/* embed map */}
             <Map />
 

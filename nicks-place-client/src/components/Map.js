@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Map = () => {
   
@@ -8,8 +8,18 @@ const Map = () => {
     width: "100%"};
   
   const defaultCenter = {
-    lat: 41.3851, lng: 2.1734
+    lat: 33.554330310241966, lng: -82.89563459258274
   }
+
+  const locations = [
+      {
+        name: "Nick's Place", 
+        location: {
+            lat: 33.554330310241966, 
+            lng: -82.89563459258274
+      }
+    }
+]
   
   return (
      <LoadScript
@@ -17,8 +27,15 @@ const Map = () => {
         <GoogleMap
           mapContainerStyle={mapStyles}
           zoom={13}
-          center={defaultCenter}
-        />
+          center={defaultCenter}>
+        {
+            locations.map(item => {
+                return (
+                    <Marker key={item.name} position={item.location}/>
+                )
+            })
+        }
+        </GoogleMap>
      </LoadScript>
   )
 }
