@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
+import Search from './Search'
+
 const Menus = ({ menus }) => {
     const menusList = menus.map((menu, index) => {
         return <div key={menu.id}>
@@ -14,6 +16,7 @@ const Menus = ({ menus }) => {
     // console.log(menus)
     return (
         <>
+            <Search />
             <div>{menusList}</div>
             <br />
             <hr />
