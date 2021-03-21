@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Search = () => {
-    return(
-        <div>
-            <form>
-                <input
-                    type="text"
-                    placeholder="enter search here"
-                />
-                <button>Search</button>
-            </form>
-        </div>
-    )
+class Search extends Component {
+
+    handleOnSubmit = event => {
+        event.preventDefault()
+        console.log("event submitted!")
+    }
+
+    render() {
+        return(
+            <div>
+                <form onSubmit={event => this.handleOnSubmit(event)}>
+                    <input
+                        type="text"
+                        placeholder="enter search here"
+                    />
+                    <button>Search</button>
+                </form>
+            </div>
+        )
+    }
 }
 
 export default Search;
