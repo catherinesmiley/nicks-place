@@ -6,12 +6,12 @@ body {
 }
 
 a:link {
-    color: #181c16;
+    color: #d9d1cf;
     text-decoration: none
 }
 
 a:visited {
-    color: #181c16;
+    color: #d9d1cf;
     text-decoration: none
 }
 
@@ -20,18 +20,18 @@ a:hover {
     text-decoration: none;
 }
 
-#navbar a {
+#navbar {
     width: 100%;
     float: left;
-    /* margin: 0 0 3em 0; */
-    padding: 0;
-    /* list-style: none; */
-    display: inline;
+    padding: 10px;
+    margin: 10px;
+    background-color: #272822;
+    list-style-type: none;
 }
 
-/* #navbar a {
-    float: left;
-} */
+#navbar li {
+    display: inline
+}
 
 h1 {
     color: #cf0015
