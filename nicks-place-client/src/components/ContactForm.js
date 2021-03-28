@@ -13,13 +13,15 @@ class ContactForm extends Component {
     handleOnSubmit = event => {
         event.preventDefault()
         console.log("event submitted!")
-        
+
     }
 
     render() {
         return(
             <div>
                 <h1>Contact Us</h1>
+                <h4>Have a question? Looking for on-site catering or event space? Send us a message!</h4>
+                <hr />
                 <form onSubmit={event => this.handleOnSubmit(event)}>
                     <h3>Name:</h3>
                     <input 
