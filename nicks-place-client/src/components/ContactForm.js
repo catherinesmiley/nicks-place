@@ -2,20 +2,35 @@ import React, { Component } from 'react';
 
 class ContactForm extends Component { 
 
-    render() {
+    state = ""
 
+    handleOnChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    render() {
         return(
             <div>
                 <h1>Contact Us</h1>
                 <form>
                     <h3>Name:</h3>
-                    <input type="text"/>
+                    <input 
+                        type="text"
+                        onChange={this.handleOnChange}
+                    />
                     <br />
                     <h3>Email:</h3>
-                    <input type="text"/>
+                    <input 
+                        type="text"
+                        onChange={this.handleOnChange}
+                    />
                     <br />
                     <h3>Message:</h3>
-                    <textarea/>
+                    <textarea 
+                        onChange={this.handleOnChange}
+                    />
                     <br />
                     <br />
                     <input
