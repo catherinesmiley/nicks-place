@@ -55,3 +55,31 @@ hr {
     border: 1px solid #c5a173;
     width: 60%
 }
+
+input[type=text] {
+    padding: 4px 4px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poiret One', cursive;
+}
+
+input[type=text]:focus {
+    border: 3px solid #cf0015;
+}
+
+textarea {
+    padding: 4px 4px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poiret One', cursive;
+}
+
+textarea:focus {
+    border: 3px solid #cf0015;
+}
+
+input[type=submit] {
+    font-family: 'Poiret One', cursive;
+}
