@@ -57,11 +57,13 @@ hr {
 }
 
 input[type=text] {
-    padding: 4px 4px;
+    padding: 8px 8px;
     margin: 8px 0;
+    width: 80%;
     box-sizing: border-box;
     outline: none;
     font-family: 'Poiret One', cursive;
+    /* border-radius: 4px; */
 }
 
 input[type=text]:focus {
@@ -69,11 +71,14 @@ input[type=text]:focus {
 }
 
 textarea {
-    padding: 4px 4px;
+    padding: 8px 8px;
     margin: 8px 0;
     box-sizing: border-box;
     outline: none;
     font-family: 'Poiret One', cursive;
+    width: 60%;
+    height: 150px;
+    /* border-radius: 4px; */
 }
 
 textarea:focus {
@@ -81,5 +86,11 @@ textarea:focus {
 }
 
 input[type=submit] {
+    padding: 8px 8px;
     font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: white;
+    color: #cf0015;
+    border: 1px solid #272822;
 }
