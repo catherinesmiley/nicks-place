@@ -8,21 +8,14 @@ class ContactForm extends Component {
             <div>
                 <h1>Contact Us</h1>
                 <form>
-                    <input
-                        type="text"
-                        placeholder="Name"
-                    />
+                    <h3>Name:</h3>
+                    <input type="text"/>
                     <br />
+                    <h3>Email:</h3>
+                    <input type="text"/>
                     <br />
-                    <input
-                        type="text"
-                        placeholder="Email"
-                    />
-                    <br />
-                    <br />
-                    <textarea>
-                        Enter your message here
-                    </textarea>
+                    <h3>Message:</h3>
+                    <textarea/>
                 </form>
             </div>
         )
