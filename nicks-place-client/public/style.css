@@ -94,3 +94,7 @@ input[type=submit] {
     color: #cf0015;
     border: 1px solid #272822;
 }
+
+input[type=submit]:active {
+    transform: scale(0.98);
+}
