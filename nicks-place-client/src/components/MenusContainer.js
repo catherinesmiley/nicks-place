@@ -9,6 +9,7 @@ import HoursAndLocation from './HoursAndLocation'
 import Specials from './Specials'
 import About from './About'
 import Photos from './Photos'
+import ContactForm from './ContactForm'
 import { fetchMenus } from '../actions/menus'
 import { fetchMenutypes } from '../actions/menutypes'
 
@@ -30,6 +31,7 @@ class MenusContainer extends Component {
                     <Route exact path="/specials" component={Specials} />
                     <Route exact path="/about" component={About} />
                     <Route exact path="/photos" component={Photos} />
+                    <Route exact path="/contact" component={ContactForm} />
                 </Switch>
             </div>
         );

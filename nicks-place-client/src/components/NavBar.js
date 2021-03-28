@@ -39,7 +39,13 @@ const NavBar = () => {
                     <NavLink
                         to="/photos"
                         exact
-                    >Photos</NavLink>
+                    >Photos • </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        to="/contact"
+                        exact
+                    >Contact Us</NavLink>
                 </li>
             </ul>
         </div>
