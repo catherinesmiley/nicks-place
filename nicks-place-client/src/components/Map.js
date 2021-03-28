@@ -9,7 +9,7 @@ const Map = () => {
     }
   
   const mapStyles = {        
-    height: "100vh",
+    height: "80vh",
     width: "100%"};
   
   const defaultCenter = {
