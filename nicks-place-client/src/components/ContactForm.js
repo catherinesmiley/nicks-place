@@ -16,6 +16,11 @@ class ContactForm extends Component {
                     <br />
                     <h3>Message:</h3>
                     <textarea/>
+                    <br />
+                    <br />
+                    <input
+                        type="submit"
+                    />
                 </form>
             </div>
         )
