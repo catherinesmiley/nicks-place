@@ -90,11 +90,24 @@ input[type=submit] {
     font-family: 'Poiret One', cursive;
     font-size: 18px;
     border-radius: 4px;
-    background-color: white;
-    color: #cf0015;
     border: 1px solid #272822;
+    color: #272822;
 }
 
 input[type=submit]:active {
-    transform: scale(0.98);
+    transform: scale(0.95);
+}
+
+button {
+    padding: 8px 8px;
+    margin: 10px;
+    font-family: 'Poiret One', cursive;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #272822;
+    color: #272822;
+}
+
+button:active {
+    transform: scale(0.95);
 }

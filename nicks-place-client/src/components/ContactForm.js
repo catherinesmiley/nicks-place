@@ -13,6 +13,7 @@ class ContactForm extends Component {
     handleOnSubmit = event => {
         event.preventDefault()
         console.log("event submitted!")
+        
     }
 
     render() {
