@@ -9,43 +9,49 @@ const NavBar = () => {
                     <NavLink 
                         to="/"
                         exact
-                    >Home • </NavLink>
+                    >Home </NavLink>
+                    • 
                 </li>
                 <li>
                     <NavLink
                         to="/menus"
                         exact
-                    >Menus • </NavLink>
+                    > Menus </NavLink>
+                    •
                 </li>
                 <li>
                     <NavLink
                         to="/specials"
                         exact
-                    >Weekly Specials • </NavLink>
+                    > Weekly Specials </NavLink>
+                    •
                 </li>
                 <li>
                     <NavLink
                         to="/hoursandlocation"
                         exact
-                    >Hours & Location • </NavLink>
+                    > Hours & Location </NavLink>
+                    •
                 </li>
                 <li>
                     <NavLink
                         to="/about"
                         exact
-                    >About • </NavLink>
+                    > About </NavLink>
+                    •
                 </li>
                 <li>
                     <NavLink
                         to="/photos"
                         exact
-                    >Photos • </NavLink>
+                    > Photos </NavLink>
+                    •
                 </li>
                 <li>
                     <NavLink
                         to="/contact"
                         exact
-                    >Contact Us</NavLink>
+                    > Contact Us</NavLink>
                 </li>
             </ul>
         </div>
