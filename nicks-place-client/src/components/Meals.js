@@ -10,7 +10,7 @@ const Meals = ({ menuID, meals, menutypes }) => {
     return (
         <div className="meals">
             {mealsList.map(meal => {
-                return (<p key={meal.id}>{meal.name} - {meal.price}
+                return (<p key={meal.id}><b>{meal.name} - {meal.price}</b>
                 <br />
                     {meal.description}</p>)
             })}
